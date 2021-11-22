@@ -18,9 +18,11 @@
 
 package org.ejml.simple.ops;
 
+import org.ejml.data.CMatrixRMaj;
 import org.ejml.data.Complex_F64;
 import org.ejml.data.Matrix;
 import org.ejml.data.ZMatrixRMaj;
+import org.ejml.dense.row.CommonOps_CDRM;
 import org.ejml.dense.row.CommonOps_ZDRM;
 import org.ejml.dense.row.MatrixFeatures_ZDRM;
 import org.ejml.dense.row.NormOps_ZDRM;
@@ -227,6 +229,16 @@ public class SimpleOperations_ZDRM implements SimpleOperations<ZMatrixRMaj> {
     public void changeSign( ZMatrixRMaj a ) {
 //        CommonOps_ZDRM.changeSign(a);
         throw new UnsupportedOperation();
+    }
+
+    @Override
+    public double elementMax( ZMatrixRMaj A ) {
+        return CommonOps_ZDRM.elementMaxReal(A);
+    }
+
+    @Override
+    public double elementMin( ZMatrixRMaj A ) {
+        return CommonOps_ZDRM.elementMinReal(A);
     }
 
     @Override

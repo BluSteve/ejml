@@ -101,6 +101,10 @@ public interface SimpleOperations<T extends Matrix> extends Serializable {
 
     void changeSign( T a );
 
+    double elementMax( T A );
+
+    double elementMin( T A );
+
     double elementMaxAbs( T A );
 
     double elementMinAbs( T A );

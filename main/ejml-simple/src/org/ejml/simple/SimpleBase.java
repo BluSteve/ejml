@@ -1002,6 +1002,24 @@ public abstract class SimpleBase<T extends SimpleBase<T>> implements Serializabl
     }
 
     /**
+     * Returns the maximum real value of all the elements in this matrix.
+     *
+     * @return Largest real value of any element.
+     */
+    public double elementMax() {
+        return ops.elementMax(mat);
+    }
+
+    /**
+     * Returns the minimum real value of all the elements in this matrix.
+     *
+     * @return Smallest real value of any element.
+     */
+    public double elementMin() {
+        return ops.elementMin(mat);
+    }
+
+    /**
      * Returns the maximum absolute value of all the elements in this matrix.  This is
      * equivalent the the infinite p-norm of the matrix.
      *
