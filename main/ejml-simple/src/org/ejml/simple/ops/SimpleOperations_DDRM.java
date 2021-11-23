@@ -21,7 +21,10 @@ import org.ejml.concurrency.EjmlConcurrency;
 import org.ejml.data.Complex_F64;
 import org.ejml.data.DMatrixRMaj;
 import org.ejml.data.Matrix;
-import org.ejml.dense.row.*;
+import org.ejml.dense.row.CommonOps_DDRM;
+import org.ejml.dense.row.CommonOps_MT_DDRM;
+import org.ejml.dense.row.MatrixFeatures_DDRM;
+import org.ejml.dense.row.NormOps_DDRM;
 import org.ejml.dense.row.mult.VectorVectorMult_DDRM;
 import org.ejml.ops.MatrixIO;
 import org.ejml.simple.SimpleOperations;
@@ -237,7 +240,7 @@ public class SimpleOperations_DDRM implements SimpleOperations<DMatrixRMaj> {
 
     @Override
     public double elementMin( DMatrixRMaj A ) {
-        return CommonOps_DDRM.elementMax(A);
+        return CommonOps_DDRM.elementMin(A);
     }
 
     @Override
