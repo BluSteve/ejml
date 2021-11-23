@@ -19,7 +19,6 @@ package org.ejml.simple.ops;
 
 import org.ejml.concurrency.EjmlConcurrency;
 import org.ejml.data.*;
-import org.ejml.dense.row.CommonOps_DDRM;
 import org.ejml.ops.MatrixIO;
 import org.ejml.simple.ConvertToDenseException;
 import org.ejml.simple.ConvertToImaginaryException;

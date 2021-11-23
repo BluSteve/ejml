@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2009-2020, Peter Abeles. All Rights Reserved.
+ * Copyright (c) 2021, Peter Abeles. All Rights Reserved.
  *
  * This file is part of Efficient Java Matrix Library (EJML).
  *
@@ -15,14 +15,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package org.ejml.simple.ops;
 
-import org.ejml.data.CMatrixRMaj;
 import org.ejml.data.Complex_F64;
 import org.ejml.data.Matrix;
 import org.ejml.data.ZMatrixRMaj;
-import org.ejml.dense.row.CommonOps_CDRM;
 import org.ejml.dense.row.CommonOps_ZDRM;
 import org.ejml.dense.row.MatrixFeatures_ZDRM;
 import org.ejml.dense.row.NormOps_ZDRM;

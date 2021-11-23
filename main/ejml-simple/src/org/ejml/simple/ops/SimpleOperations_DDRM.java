@@ -18,7 +18,6 @@
 package org.ejml.simple.ops;
 
 import org.ejml.concurrency.EjmlConcurrency;
-import org.ejml.data.CMatrixRMaj;
 import org.ejml.data.Complex_F64;
 import org.ejml.data.DMatrixRMaj;
 import org.ejml.data.Matrix;
