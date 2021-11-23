@@ -229,12 +229,12 @@ public class SimpleOperations_ZDRM implements SimpleOperations<ZMatrixRMaj> {
     }
 
     @Override
-    public double elementMax( ZMatrixRMaj A ) {
+    public /**/double elementMax( ZMatrixRMaj A ) {
         return CommonOps_ZDRM.elementMaxReal(A);
     }
 
     @Override
-    public double elementMin( ZMatrixRMaj A ) {
+    public /**/double elementMin( ZMatrixRMaj A ) {
         return CommonOps_ZDRM.elementMinReal(A);
     }
 

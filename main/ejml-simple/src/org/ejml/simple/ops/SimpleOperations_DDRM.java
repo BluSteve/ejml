@@ -234,12 +234,12 @@ public class SimpleOperations_DDRM implements SimpleOperations<DMatrixRMaj> {
     }
 
     @Override
-    public double elementMax( DMatrixRMaj A ) {
+    public /**/double elementMax( DMatrixRMaj A ) {
         return CommonOps_DDRM.elementMax(A);
     }
 
     @Override
-    public double elementMin( DMatrixRMaj A ) {
+    public /**/double elementMin( DMatrixRMaj A ) {
         return CommonOps_DDRM.elementMin(A);
     }
 
