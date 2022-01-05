@@ -42,6 +42,8 @@ public interface SimpleOperations<T extends Matrix> extends Serializable {
 
     void transpose( T input, T output );
 
+    void transposei( T input );
+
     void mult( T A, T B, T output );
 
     void multTransA( T A, T B, T output );

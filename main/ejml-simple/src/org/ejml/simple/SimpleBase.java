@@ -154,6 +154,12 @@ public abstract class SimpleBase<T extends SimpleBase<T>> implements Serializabl
         return ret;
     }
 
+    public T transposei() {
+        ops.transposei(mat);
+
+        return (T) this;
+    }
+
     /**
      * <p>
      * Returns a matrix which is the result of matrix multiplication:<br>

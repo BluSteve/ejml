@@ -191,6 +191,18 @@ public class TestSimpleMatrix extends EjmlStandardJUnit {
     }
 
     @Test
+    public void transposei() {
+        SimpleMatrix orig = SimpleMatrix.random_DDRM(3, 3, 0, 1, rand);
+
+        DMatrixRMaj dTran = new DMatrixRMaj(3, 3);
+        CommonOps_DDRM.transpose((DMatrixRMaj)orig.mat, dTran);
+
+        orig.transposei();
+
+        EjmlUnitTests.assertEquals(dTran, (DMatrixRMaj)orig.mat, UtilEjml.TEST_F64);
+    }
+
+    @Test
     public void mult() {
         SimpleMatrix a = SimpleMatrix.random_DDRM(3, 2, 0, 1, rand);
         SimpleMatrix b = SimpleMatrix.random_DDRM(2, 3, 0, 1, rand);

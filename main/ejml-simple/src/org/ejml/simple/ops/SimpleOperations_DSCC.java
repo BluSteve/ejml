@@ -83,6 +83,11 @@ public class SimpleOperations_DSCC implements SimpleSparseOperations<DMatrixSpar
     }
 
     @Override
+    public void transposei( DMatrixSparseCSC input ) {
+        CommonOps_DSCC.transpose(input, input, gw);
+    }
+
+    @Override
     public void mult( DMatrixSparseCSC A, DMatrixSparseCSC B, DMatrixSparseCSC output ) {
         if (EjmlConcurrency.useConcurrent(A)) {
             CommonOps_MT_DSCC.mult(A, B, output, workspaceMT);

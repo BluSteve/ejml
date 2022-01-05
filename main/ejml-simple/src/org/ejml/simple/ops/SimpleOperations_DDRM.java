@@ -77,6 +77,15 @@ public class SimpleOperations_DDRM implements SimpleOperations<DMatrixRMaj> {
     }
 
     @Override
+    public void transposei( DMatrixRMaj input ) {
+        if (EjmlConcurrency.useConcurrent(input)) {
+            CommonOps_MT_DDRM.transpose(input);
+        } else {
+            CommonOps_DDRM.transpose(input);
+        }
+    }
+
+    @Override
     public void mult( DMatrixRMaj A, DMatrixRMaj B, DMatrixRMaj output ) {
         if (EjmlConcurrency.useConcurrent(A)) {
             CommonOps_MT_DDRM.mult(A, B, output);

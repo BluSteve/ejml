@@ -69,6 +69,11 @@ public class SimpleOperations_ZDRM implements SimpleOperations<ZMatrixRMaj> {
     }
 
     @Override
+    public void transposei( ZMatrixRMaj input ) {
+        CommonOps_ZDRM.transpose(input);
+    }
+
+    @Override
     public void mult( ZMatrixRMaj A, ZMatrixRMaj B, ZMatrixRMaj output ) {
         CommonOps_ZDRM.mult(A, B, output);
     }
